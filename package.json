@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dianakps.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "export": "next export",
+    "deploy": "gh-pages -d .next",
     "lint": "next lint"
   },
   "dependencies": {
